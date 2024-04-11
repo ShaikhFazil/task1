@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  img{
+    width: 15px;
+    color: gainsboro;
+  }
+  
+  aside {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 19%; 
+    margin-top: 20px; 
+  }
+
+  aside > button{
+   cursor: pointer;
+   padding: 5px;
+   border: 1px solid black;
+   background-color: white;
+   border-radius: 5px ;
+}
+
+  .profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+border: 1px solid black;
+background-color: black;
+}
+
+.em{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.em > span {
+    color: rgb(126, 123, 123);
+}
+
+.main_pro{
+    width: 20%;
+}
+
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 90%;
+    }
+  
+    aside {
+      width: 90%; 
+    }
+  }
+  
